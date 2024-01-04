@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const API_URL = 'https://api.hancock.ink';
 
 function readTransaction(token, transactionId) {

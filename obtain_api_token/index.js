@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const AUTH_API_URL = 'https://account.hancock.ink';
 
 function main() {
