@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const API_URL = 'https://api.hancock.ink';
+const API_URL = 'https://api.hancock.ink/v1';
 
 function getFileUploadURL(token) {
   return fetch(`${API_URL}/files/upload_url`, {
@@ -29,7 +29,7 @@ function getFileUploadURL(token) {
 function uploadFileBody(url) {
   const fileBuffer = fs.readFileSync('./non_disclosure_agreement.pdf');
 
-  const headers = new fetch.Headers();
+  const headers = new Headers();
   headers.append('Content-Type', 'application/pdf');
   headers.append('Content-Length', fileBuffer.byteLength);
 

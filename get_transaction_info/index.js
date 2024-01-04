@@ -1,4 +1,4 @@
-const API_URL = 'https://api.hancock.ink';
+const API_URL = 'https://api.hancock.ink/v1';
 
 function readTransaction(token, transactionId) {
   return fetch(`${API_URL}/transactions/${transactionId}`, {
