@@ -1,6 +1,4 @@
-const fetch = require('node-fetch');
-
-const AUTH_API_URL = 'https://account.hancock.ink';
+const AUTH_API_URL = 'https://account.hancock.ink/v1';
 
 function main() {
   const clientId = process.argv[2];

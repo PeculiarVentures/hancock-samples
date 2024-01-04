@@ -1,6 +1,4 @@
-const fetch = require('node-fetch');
-
-const API_URL = 'https://api.hancock.ink';
+const API_URL = 'https://api.hancock.ink/v1';
 
 function createTransaction(token, fileId, recipientEmail) {
   return fetch(`${API_URL}/transactions`, {

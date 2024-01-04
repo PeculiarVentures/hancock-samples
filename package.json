@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Contains samples of interacting with Hancock API",
   "main": "index.js",
-  "dependencies": {
-    "node-fetch": "^1.7.3"
-  },
   "author": "Peculiar Ventures",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

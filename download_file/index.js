@@ -1,11 +1,9 @@
-const fetch = require('node-fetch');
 const fs = require('fs');
 const util = require('util');
-const stream = require('stream');
 
-const API_URL = 'https://api.hancock.ink';
+const API_URL = 'https://api.hancock.ink/v1';
 
-const finished = util.promisify(stream.finished);
+// const finished = util.promisify(stream.finished);
 
 function getFileDownloadURL(token, fileId) {
   return fetch(`${API_URL}/files/download_url/${fileId}`, {
@@ -37,9 +35,7 @@ function downloadFileBody(url, name) {
         return response.text().then(err => Promise.reject(err));
       }
 
-      response.body.pipe(writeStream);
-
-      return finished(writeStream);
+      return response.body.pipeTo(fs.WriteStream.toWeb(writeStream));
     })
     .catch((error) => {
       console.log('Unable to upload file');
