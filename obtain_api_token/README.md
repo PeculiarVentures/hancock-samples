@@ -9,4 +9,4 @@ How to obtain APP_CLIENT_ID APP_SECRET you could find on [create app example](..
 
 Notes:
 - The examples is based on the [Hancock API](https://docs.hancock.ink).
-- The example was tested on MacOS v11.2.3 with node v14.16.0.
+- The example was tested on MacOS v14.1.1 with node v18.15.0
