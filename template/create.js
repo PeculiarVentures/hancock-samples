@@ -9,8 +9,8 @@ function createTemplate(token, fileId) {
     },
     body: JSON.stringify({
       name: 'Non Disclosure for test',
-      fileIds: [fileId], // specify one or more files to be included in transaction
-      recipients: [{ type: 'signer', role: 'Contractor' }], // specify one or more transaction recipients
+      fileIds: [fileId], // specify one or more files to be included in template
+      recipients: [{ type: 'signer', role: 'Contractor' }], // specify one or more template recipients/roles
     })
   })
     .then(response => {

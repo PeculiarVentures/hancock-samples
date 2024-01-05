@@ -1,6 +1,6 @@
 # Hancock create transaction example
 
-This example will create a new transaction and send it yo specified person.
+This example will create a new transaction and send it to specified person.
 
 Run example script:
 - Run the example with `node index.js API_TOKEN FILE_ID RECIPIENT_EMAIL`.
